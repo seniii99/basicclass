@@ -59,7 +59,7 @@ function printMultiplicationTable() {
     "1~9 사이의 숫자를 입력하면 해당 단을 출력합니다. "
   );
 
-  if (userChoice === "") {
+  if (userChoice !== "") {
     // 선택한 구구단 출력
     const num = parseInt(userChoice, 10);
     
@@ -70,8 +70,8 @@ function printMultiplicationTable() {
       }
     } else {
       console.log("1~9 사이의 숫자를 입력하세요.");
+    } 
     }
   }
-}
 // 프로그램 실행
 main();
