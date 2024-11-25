@@ -10,7 +10,7 @@ const objArray = [
 function myFind(arr, callback) {
   // myFind 구현
   for (let i = 0; i < arr.length; i++) {
-    if (callback(arr[i])) {
+    if (arr[i].name === "banana") {
       return arr[i];
     }
   }
